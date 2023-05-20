@@ -1,47 +1,55 @@
-*{
+:root {
+    --primary-color: #19013b;
+    --secondary-color: #ecf0f3;
+    --shadow-color: rgba(0, 0, 0, 0.16);
+}
+
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #19013b;
-    font-family: sans-serif;
     outline: none;
 }
 
-.wrapper{
+body {
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+.wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.myCal{
-    background: #ecf0f3;
+.myCal {
+    background: var(--secondary-color);
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 5px 5px 12px #ffffff,
-    5px 5px 12px rgba(26, 15, 15, 0.6);
+    box-shadow: 5px 5px 12px #ffffff, 5px 5px 12px rgba(26, 15, 15, 0.6);
     display: grid;
     grid-template-columns: repeat(4, 88px);
 }
 
-H4{
-    background: #ecf0f3;
+h4 {
+    background: var(--secondary-color);
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 47%;
-
 }
 
-input{
+input {
     grid-column: span 4;
     height: 70px;
     width: 356px;
-    background-color: #ecf0f3;
-    box-shadow: inset -5px -5px 12px #ffffff,
-                inset 5px 5px 12px rgba(0,0,0,0.16);
+    background-color: var(--secondary-color);
+    box-shadow: inset -5px -5px 12px #ffffff, inset 5px 5px 12px var(--shadow-color);
     border: none;
     border-radius: 30px;
-    color: #19013b;
+    color: var(--primary-color);
     font-size: 50px;
     text-align: end;
     margin: auto;
@@ -50,22 +58,20 @@ input{
     padding: 20px;
 }
 
-button{
+button {
     height: 65px;
     width: 65px;
-    background-color: #ecf0f3;
-    box-shadow: -5px -5px 12px #19013b,
-                 5px 5px 12px rgba(0,0,0,0.16);
+    background-color: var(--secondary-color);
+    box-shadow: -5px -5px 12px var(--primary-color), 5px 5px 12px var(--shadow-color);
     border: none;
     border-radius: 30px;
     margin: 8px;
     font-size: 30px;
 }
 
-.equal{
+.equal {
     width: 155px;
     border-radius: 40px;
-    background-color: #ecf0f3;
-    box-shadow: -5px -5px 12px #918c8c,
-                 5px 5px 12px rgba(0,0,0,0.16);
+    background-color: var(--secondary-color);
+    box-shadow: -5px -5px 12px #918c8c, 5px 5px 12px var(--shadow-color);
 }
